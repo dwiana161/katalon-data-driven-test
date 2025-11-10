@@ -18,8 +18,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String imagePath = '/Users/dwianakas/Katalon Studio/PracticeForm/Files/rabbit.jpeg'
-
 // load test data
 def testData = TestDataFactory.findTestData('Data Files/verificationForm')
 
@@ -71,7 +69,7 @@ for (def row = 1; row <= testData.getRowNumbers(); row++) {
 	
 	WebUI.click(findTestObject('Object Repository/SubmitForm/label_music'))
 	
-	WebUI.uploadFile(findTestObject('Object Repository/SubmitForm/input_upload_picture'), imagePath)
+	WebUI.uploadFile(findTestObject('Object Repository/SubmitForm/input_upload_picture'), GlobalVariable.imagePath)
 	
 	if (address) WebUI.setText(findTestObject('Object Repository/SubmitForm/textarea_Current Address_currentAddress'), address)
 	
