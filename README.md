@@ -29,7 +29,7 @@ Pastikan sudah terpasang:
 ## Cara Menjalankan Tes
 1. Clone repository ini:
    ```
-   git clone https://github.com/username/katalon-data-driven-test.git](https://github.com/dwiana161/katalon-data-driven-test.git
+   git clone https://github.com/dwiana161/katalon-data-driven-test.git
    ```
 2. Buka project di Katalon Studio.
 3. Buka Test Suite: PracticeForm_ValidationTest.
